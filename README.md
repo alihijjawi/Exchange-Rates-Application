@@ -35,4 +35,4 @@ A person has the option to calculate how much a specific amount of currency is w
 
 ## Architecture
 Below is a simple diagram showing the main architecture we adopted for this project.
-
+![alt text](https://github.com/alihijjawi/Exchange-Rates-Application/blob/main/main.PNG?raw=true)
