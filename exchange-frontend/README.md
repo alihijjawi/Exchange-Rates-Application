@@ -14,13 +14,6 @@
 - React, Javascript JSX with a good set of libraries are used to build the User Interface
 - [<Recharts/>](https://recharts.org/en-US/) is used for the exchange rate multi-line graph
 
-# `Project Structure`
-
-Models and Fragments/Activities        |  Layouts
-:-------------------------:|:-------------------------:
-  | 
-
-
 ## `Functionalities`
 
 ### `Homepage`
