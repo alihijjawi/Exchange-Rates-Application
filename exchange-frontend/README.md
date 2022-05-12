@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# `React/Web Platform`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## `How to Run`
+- clone the repo with the exchange-frontend files
+- if you have a "node_modules" folder already, skip 3 steps
+- if you download the source code only: make sure to run "npx create-react-app exchange-frontend" command in the CMD on the main folder of the frontend code
+- run the commands "npm i @mui/material @emotion/react @emotion/styled recharts" to install the needed libraries and any other libraries the CMD promts you to do
+- you should see a "node_modules" folder that will run your react app
+- Run the backend properly according to the instructions on that
+- Run the command "npm start" in the main frontend folder and wait for your local browser to open your localhost:3000 route
+- You should be able to use the webapp normally
 
-## Available Scripts
+## `Technologies Used`
+- React, Javascript JSX with a good set of libraries are used to build the User Interface
+- [<Recharts/>](https://recharts.org/en-US/) is used for the exchange rate multi-line graph
 
-In the project directory, you can run:
+# `Project Structure`
 
-### `npm start`
+Models and Fragments/Activities        |  Layouts
+:-------------------------:|:-------------------------:
+  | 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## `Functionalities`
 
-### `npm test`
+### `Homepage`
+The homepage includes the main Rates of buying and selling USD/LPB according caluclated according to previous transactions users of the webapp have done. It also contains a calculator that helps the user check how much they need to have in some currency, in regards of the other according the the rate, or how much their own money money will transfer to in the other currency. Also, a users can record their own transactions and the type (buy/sell) and that will affect the main rates. Previous transactions will show if the user has made said transactions while being logged in.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Registering/Logging In`
+A user can register using a unique identifier and a password to open extra features of the website, like seeing past transactions and performing trades with other users.
 
-### `npm run build`
+### `Rate Statistics`
+Clicking on that button will transfer the user to a new page that shows specific rate-statistics that can inform them of how the history of the rates were evolving, and also show a graph of the buy and sell rates are fluctuating.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Trade Exchange`
+Registered users can trade their own money with users when they post a trade offer in the Trade section. First, they have a list of all the trade offers by other users of the webapp and it shows the details of the trade, and they can choose a specific post-id from the list to choose to trade for. This affects the calculation of the actual main buy/sell rate.
+The users can also post trade offers by entering the specific amounts they have and want to trade, and it will show on other user's list of trade offers. Obviously, only one person can accept a trade offer, and they it will be gone.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# `App Architecture`
+This is a visual representation of the architecture the app is based on 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
