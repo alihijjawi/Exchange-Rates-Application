@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<GridPane fx:controller="com.hmekhatib.exchange.insights.Insights"
+          xmlns:fx="http://javafx.com/fxml"  hgap="10"
+          vgap="10" stylesheets="@insights.css"
+          alignment="center"
+          >
+    <children>
+        <LineChart fx:id="lc" layoutX="-40.0" layoutY="-3.0"  GridPane.columnSpan = "30">
+            <xAxis>
+                <CategoryAxis fx:id="xAxis" side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" fx:id="yAxis" />
+            </yAxis>
+        </LineChart>
+        <Separator orientation="HORIZONTAL" GridPane.rowIndex = "1" GridPane.columnSpan="5"/>
+        <Label styleClass = "value-label" text="1 Hour Change %(S):"  GridPane.rowIndex = "2"/>
+        <Label fx:id="oneHChange" styleClass = "value" text = "VALUE" GridPane.rowIndex = "2" GridPane.columnIndex = "1"/>
+        <Label styleClass = "value-label" text="12 Hour Change %(S):" GridPane.rowIndex = "3" />
+        <Label fx:id="tHChange" styleClass = "value" text = "VALUE" GridPane.rowIndex = "3" GridPane.columnIndex = "1"/>
+        <Label styleClass = "value-label" text="24 Hour Change %(S):" GridPane.rowIndex = "4" />
+        <Label fx:id="thHChange" styleClass = "value" text = "VALUE" GridPane.rowIndex = "4" GridPane.columnIndex = "1"/>
+        <Separator orientation="VERTICAL" GridPane.rowIndex = "2" GridPane.columnIndex = "2" GridPane.rowSpan="3"/>
+        <Label styleClass = "value-label" text="7 Day Change %(S):" GridPane.rowIndex = "4" GridPane.columnIndex = "3"/>
+        <Label fx:id="sDChange" styleClass = "value" text = "VALUE" GridPane.rowIndex = "4" GridPane.columnIndex = "4"/>
+        <Label styleClass = "value-label" text="Min Rate(S):" GridPane.rowIndex = "2" GridPane.columnIndex = "3"/>
+        <Label styleClass = "value" fx:id = "maxRate" text = "VALUE" GridPane.rowIndex = "2" GridPane.columnIndex = "4"/>
+        <Label styleClass = "value-label" text="Max Rate(S):" GridPane.rowIndex = "3" GridPane.columnIndex = "3"/>
+        <Label styleClass = "value" fx:id = "minRate" text = "VALUE" GridPane.rowIndex = "3" GridPane.columnIndex = "4"/>
+        <Separator orientation="HORIZONTAL" GridPane.rowIndex = "5" GridPane.columnSpan="5"/>
+
+        <Label styleClass = "value-label" text="1 Hour Change %(B):"  GridPane.rowIndex = "6"/>
+        <Label fx:id="oneHChangeB" styleClass = "value" text = "VALUE" GridPane.rowIndex = "6" GridPane.columnIndex = "1"/>
+        <Label styleClass = "value-label" text="12 Hour Change %(B):" GridPane.rowIndex = "7" />
+        <Label fx:id="tHChangeB" styleClass = "value" text = "VALUE" GridPane.rowIndex = "7" GridPane.columnIndex = "1"/>
+        <Label styleClass = "value-label" text="24 Hour Change %(B):" GridPane.rowIndex = "8" />
+        <Label fx:id="thHChangeB" styleClass = "value" text = "VALUE" GridPane.rowIndex = "8" GridPane.columnIndex = "1"/>
+        <Separator orientation="VERTICAL" GridPane.rowIndex = "4" GridPane.columnIndex = "2" GridPane.rowSpan="6"/>
+        <Label styleClass = "value-label" text="7 Day Change %(B):" GridPane.rowIndex = "8" GridPane.columnIndex = "3"/>
+        <Label fx:id="sDChangeB" styleClass = "value" text = "VALUE" GridPane.rowIndex = "8" GridPane.columnIndex = "4"/>
+        <Label styleClass = "value-label" text="Min Rate(B):" GridPane.rowIndex = "6" GridPane.columnIndex = "3"/>
+        <Label styleClass = "value" fx:id = "maxRateB" text = "VALUE" GridPane.rowIndex = "6" GridPane.columnIndex = "4"/>
+        <Label styleClass = "value-label" text="Max Rate(B):" GridPane.rowIndex = "7" GridPane.columnIndex = "3"/>
+        <Label styleClass = "value" fx:id = "minRateB" text = "VALUE" GridPane.rowIndex = "7" GridPane.columnIndex = "4"/>
+
+    </children>
+
+</GridPane>
