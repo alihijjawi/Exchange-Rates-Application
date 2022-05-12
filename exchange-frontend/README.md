@@ -39,3 +39,4 @@ The users can also post trade offers by entering the specific amounts they have 
 # `App Architecture`
 This is a visual representation of the architecture the app is based on 
 
+![arch-figure drawio](https://user-images.githubusercontent.com/63451559/168114539-0f19c79a-85c6-43f3-9447-703c4ab69a2e.png)
